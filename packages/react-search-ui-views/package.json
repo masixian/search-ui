@@ -1,6 +1,6 @@
 {
   "name": "@elastic/react-search-ui-views",
-  "version": "1.3.2",
+  "version": "1.4.0-rc.3",
   "description": "A collection of React UI components for building search experiences",
   "license": "Apache-2.0",
   "main": "lib",
@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test-ci": "jest --runInBand",
-    "test": "jest",
+    "test": "./bin/test",
     "clean": "rimraf es lib",
     "build-css": "./bin/build-css",
     "watch-css": "./bin/watch-css",
@@ -61,6 +61,7 @@
     "@storybook/react": "^4.1.18",
     "babel-loader": "^8.0.6",
     "chokidar-cli": "^1.2.2",
+    "core-js": "^3.6.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.3.5",
@@ -78,6 +79,7 @@
     "autoprefixer": "^9.6.1",
     "downshift": "^3.2.10",
     "rc-pagination": "^1.20.1",
+    "react": "^16.13.1",
     "react-select": "^2.4.4"
   }
 }

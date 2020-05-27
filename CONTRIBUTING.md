@@ -71,6 +71,20 @@ npm run test
 npm run test -- --watch
 ```
 
+### Editor Setup
+
+#### VSCode
+
+We recommend using the ESLint plugin with the following settings:
+
+NOTE: We enable `formatOnSave` so that /examples projects are formatted automatically. eslint --fix
+would only apply to code under /packages
+
+```json
+  "editor.formatOnSave": true,
+  "eslint.enable": true
+```
+
 ### Sandbox
 
 The [sandbox](examples/sandbox/README.md) app can be used as a local development aid.
@@ -138,7 +152,7 @@ When pushing release candidates, the following lerna commands can be useful:
 
 ```
 # Create a pre-release version, like 1.0.0-rc.0
-npx lerna version prerelease --exact --preid rc
+npx lerna version [premajor | preminor | prepatch] --exact --preid rc
 # Publish 1.0.0-rc.0 and update the `next` to point to this version
 npx lerna publish from-package --force-publish=* --dist-tag next
 ```
